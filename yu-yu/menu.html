@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="../img/naroto_logo.png" type="image/x-icon">
+  <title>YU-YU Resaurant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">
+      <img src="../img/naroto_logo.png" alt="Logo">
+      <span>YU-YU</span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li class="fa-solid fa-house" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./index.html')"> Home</a></li>
+      <li class="fa-solid fa-circle-info" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./index.html#about')"> About</a></li>
+      <li class="fa-solid fa-utensils" style="color: #e9bb03;"><a href="#" > Menu</a></li>
+      <li class="fa-solid fa-fire" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./index.html#pobular')"> Popular</a></li>
+      <li class="fa-solid fa-receipt" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./yu-yu/order.html')"> Order</a></li>
+      <li class="fa-solid fa-phone-alt" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./yu-yu/contact.html')"> Contact</a></li>
+      <li class="fa-solid fa-right-to-bracket" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./Pages/login.html')"> Login</a></li>
+    </ul>
+
+    <div class="controls">
+      <button id="themeToggle" class="theme-btn">🌙</button>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </div>
+  </nav>
+
+<main class="container">
+  <section class="hero">
+    <h1>Our Exquisite Menu</h1>
+    <p class="lead">Explore our diverse selection of authentic Japanese cuisine, from classic sushi rolls to savory ramen and refreshing beverages.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title"><span class="accent-bar"></span>Sushi &amp; Sashimi</h2>
+    <div class="grid cards">
+      <article class="card"><img src="../yu-yu/menu - Copy/Sashimi & Sushi Rolls/3-kinds-of-sashimi-2.JPG"><div class="card-body"><h3 class="card-title">Assorted Sashimi Platter</h3><p class="muted">Three selections of fresh, sliced raw fish.</p><div class="card-footer"><span class="price" data-price="12.00">$12.00</span> &nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Assorted Sashimi Platter" 
+                    data-price="12.00">
+                Add To Order
+            </button></div></div></article>
+      <article class="card"><img src="../yu-yu/menu - Copy/Sashimi & Sushi Rolls/california-rainbow-roll.JPG"><div class="card-body"><h3 class="card-title">California Rainbow Roll</h3><p class="muted">Classic roll topped with tuna, salmon, and avocado slices.</p><div class="card-footer"><span class="price" data-price="18.00">$18.00</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="California Rainbow Roll" 
+                    data-price="18.00">
+                Add To Order
+            </button></div></div></article>
+      <article class="card"><img src="../yu-yu/menu - Copy/Sashimi & Sushi Rolls/arashi-roll.JPG"><div class="card-body"><h3 class="card-title">Arashi Roll</h3><p class="muted">A specialty sushi roll with unique fillings and toppings.</p><div class="card-footer"><span class="price" data-price="10.00">$10.00</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Arashi Roll" 
+                    data-price="10.00">
+                Add To Order
+            </button></div></div></article>
+      <article class="card"><img src="../yu-yu/menu - Copy/Sashimi & Sushi Rolls/as-spicy.JPG"><div class="card-body"><h3 class="card-title">Spicy Hand Roll</h3><p class="muted">Hand-rolled cone sushi with a spicy filling (Temaki).</p><div class="card-footer"><span class="price" data-price="7.00">$7.00</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Spicy Hand Roll" 
+                    data-price="7.00">
+                Add To Order
+            </button></div></div></article>
+      <article class="card"><img src="../yu-yu/menu - Copy/Sashimi & Sushi Rolls/hawaiian-roll.JPG "><div class="card-body"><h3 class="card-title">Hawaiian Roll</h3><p class="muted">Inside-out rolls featuring tropical flavors and ingredients.</p><div class="card-footer"><span class="price" data-price="14.00">$14.00</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Hawaiian Roll" 
+                    data-price="14.00">
+                Add To Order
+            </button></div></div></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title"><span class="accent-bar"></span>Noodle, Soups, and Donburi</h2>
+    <div class="grid cards">
+      <article class="card"><img src="../yu-yu/menu - Copy/Noodle, Soups, and Donburi/chasu-egg-don.JPG"><div class="card-body"><h3 class="card-title">Chashu Egg Donburi</h3><p class="muted">Sliced pork belly (Chashu) and egg over a bowl of rice.</p><div class="card-footer"><span class="price" data-price="6.00">$6.00</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Chashu Egg Donburi" 
+                    data-price="6.00">
+                Add To Order
+            </button></div></div></article>
+      <article class="card"><img src="../yu-yu/menu - Copy/Noodle, Soups, and Donburi/chasu-men.JPG"><div class="card-body"><h3 class="card-title">Chashu Ramen</h3><p class="muted">Noodle soup topped with tender, slow-braised pork slices.</p><div class="card-footer"><span class="price" data-price="8.00">$8.00</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Chashu Ramen" 
+                    data-price="8.00">
+                Add To Order
+            </button></div></div></article>
+      <article class="card"><img src="../yu-yu/menu - Copy/Noodle, Soups, and Donburi/clam-ramen.JPG"><div class="card-body"><h3 class="card-title">Clam Ramen</h3><p class="muted">Savory noodle soup infused with the rich flavor of clams.</p><div class="card-footer"><span class="price" data-price="7.50">$7.50</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Clam Ramen" 
+                    data-price="7.50">
+                Add To Order
+            </button></div></div></article>
+      <article class="card"><img src="../yu-yu/menu - Copy/Noodle, Soups, and Donburi/katsu-don.JPG"><div class="card-body"><h3 class="card-title">Katsu Donburi</h3><p class="muted">Deep-fried breaded cutlet (Katsu) and egg simmered over rice.</p><div class="card-footer"><span class="price" data-price="11.00">$11.00</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Katsu Donburi" 
+                    data-price="11.00">
+                Add To Order
+            </button></div></div></article>
+      <article class="card"><img src="../yu-yu/menu - Copy/Noodle, Soups, and Donburi/niboshi-ramen.JPG"><div class="card-body"><h3 class="card-title">Niboshi Ramen</h3><p class="muted">Ramen broth made with dried infant sardines (Niboshi).</p><div class="card-footer"><span class="price" data-price="9.00">$9.00</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Niboshi Ramen" 
+                    data-price="9.00">
+                Add To Order
+            </button></div></div></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title"><span class="accent-bar"></span>Temaki & Fried Dishes</h2>
+    <div class="grid cards">
+      <article class="card"><img src="../yu-yu/menu - Copy/Temaki & Fried Dishes/age-wonton.JPG"><div class="card-body"><h3 class="card-title">Agedashi Wonton</h3><p class="muted">Crispy fried dumplings with a flavorful filling.</p><div class="card-footer"><span class="price" data-price="15.00">$15.00</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Agedashi Wonton" 
+                    data-price="15.00">
+                Add To Order
+            </button></div></div></article>
+      <article class="card"><img src="../yu-yu/menu - Copy/Temaki & Fried Dishes/agi-fry-don.JPG"><div class="card-body"><h3 class="card-title">Aji Fry Donburi</h3><p class="muted">Deep-fried horse mackerel over a bowl of rice.</p><div class="card-footer"><span class="price" data-price="14.00">$14.00</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Aji Fry Donburi" 
+                    data-price="14.00">
+                Add To Order
+            </button></div></div></article>
+      <article class="card"><img src="../yu-yu/menu - Copy/Temaki & Fried Dishes/gyoza.JPG"><div class="card-body"><h3 class="card-title">Gyoza Dumplings</h3><p class="muted">Pan-fried Japanese potstickers, served with dipping sauce.</p><div class="card-footer"><span class="price" data-price="17.00">$17.00</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Gyoza Dumplings" 
+                    data-price="17.00">
+                Add To Order
+            </button></div></div></article>
+      <article class="card"><img src="../yu-yu/menu - Copy/Temaki & Fried Dishes//godzilla-roll.JPG"><div class="card-body"><h3 class="card-title">Godzilla Roll</h3><p class="muted">A large, deep-fried specialty roll (tempura style).</p><div class="card-footer"><span class="price" data-price="18.00">$18.00</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Godzilla Roll" 
+                    data-price="18.00">
+                Add To Order
+            </button></div></div></article>
+      <article class="card"><img src="../yu-yu/menu - Copy/Temaki & Fried Dishes/shrimp-tempura.JPG"><div class="card-body"><h3 class="card-title">Shrimp Tempura</h3><p class="muted">Lightly battered and deep-fried prawns served with tentsuyu.</p><div class="card-footer"><span class="price" data-price="16.50">$16.50</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Shrimp Tempura" 
+                    data-price="16.50">
+                Add To Order
+            </button></div></div></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title"><span class="accent-bar"></span>Salads & Light Sides</h2>
+    <div class="grid cards">
+      <article class="card"><img src="../yu-yu/menu - Copy/Salads & Light Sides/house-salad.JPG"><div class="card-body"><h3 class="card-title">Yu Yu House Salad</h3><p class="muted">Mixed greens with ginger-sesame dressing.</p><div class="card-footer"><span class="price" data-price="15.00">$15.00</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Yu Yu House Salad" 
+                    data-price="15.00">
+                Add To Order
+            </button></div></div></article>
+      <article class="card"><img src="../yu-yu/menu - Copy/Salads & Light Sides/lotus-avocado-salad.JPG"><div class="card-body"><h3 class="card-title">Lotus & Avocado Salad</h3><p class="muted">Refreshing salad with lotus root slices and creamy avocado.</p><div class="card-footer"><span class="price" data-price="14.00">$14.00</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Lotus & Avocado Salad" 
+                    data-price="14.00">
+                Add To Order
+            </button></div></div></article>
+      <article class="card"><img src="../yu-yu/menu - Copy/Salads & Light Sides/smoked-salmon-avocado.JPG"><div class="card-body"><h3 class="card-title">Smoked Salmon & Avocado</h3><p class="muted">A vibrant salad featuring smoked salmon and fresh avocado slices.</p><div class="card-footer"><span class="price" data-price="17.00">$17.00</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Smoked Salmon & Avocado Salad" 
+                    data-price="17.00">
+                Add To Order
+            </button></div></div></article>
+      <article class="card"><img src="../yu-yu/menu - Copy/Salads & Light Sides/wagyu-yakiniku-salad.JPG"><div class="card-body"><h3 class="card-title">Wagyu Yakiniku Salad</h3><p class="muted">Seared Wagyu beef slices served atop a bed of fresh greens.</p><div class="card-footer"><span class="price" data-price="18.00">$18.00</span>&nbsp; <button class="add-to-cart-btn btn btn-primary" 
+                    data-name="Wagyu Yakiniku Salad" 
+                    data-price="18.00">
+                Add To Order
+            </button></div></div></article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div><h4>Yu Yu</h4><p class="muted">Experience the finest Japanese cuisine in a warm and inviting atmosphere.</p></div>
+    <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+  </div>
+  <div class="footer-bottom">
+      <p>© 2025 YU-YU. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="../img/naroto_logo.png" type="image/x-icon">
+  <title>YU-YU Resaurant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">
+      <img src="../img/naroto_logo.png" alt="Logo">
+      <span>YU-YU</span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li class="fa-solid fa-house" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./index.html')"> Home</a></li>
+      <li class="fa-solid fa-circle-info" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./index.html#about')"> About</a></li>
+      <li class="fa-solid fa-utensils" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./yu-yu/menu.html')"> Menu</a></li>
+      <li class="fa-solid fa-fire" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./index.html#pobular')"> Popular</a></li>
+      <li class="fa-solid fa-receipt" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./yu-yu/order.html')"> Order</a></li>
+      <li class="fa-solid fa-phone-alt" style="color: #e9bb03;"><a href="#" > Contact</a></li>
+      <li class="fa-solid fa-right-to-bracket" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./Pages/login.html')"> Login</a></li>
+    </ul>
+
+    <div class="controls">
+      <button id="themeToggle" class="theme-btn">🌙</button>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </div>
+  </nav>
+
+<main class="container">
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p class="lead">We’d love to hear from you — for reservations, feedback, or special requests.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title"><span class="accent-bar"></span>Get in Touch</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;">
+      <div class="card" style="padding:20px;box-shadow:var(--shadow);">
+        <h3>Visit Us</h3>
+        <p class="muted">123 Yu Yu Street, Tokyo, Japan</p>
+      </div>
+      <div class="card" style="padding:20px;box-shadow:var(--shadow);">
+        <h3>Call Us</h3>
+        <p class="muted">+81 (555) 123-4567</p>
+      </div>
+      <div class="card" style="padding:20px;box-shadow:var(--shadow);">
+        <h3>Email Us</h3>
+        <p class="muted">info@yuyu.example</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" >
+    <h2 class="section-title"><span class="accent-bar"></span>Send a Message</h2>
+    <div style="display: flex; gap: 50px;">
+    <form style="display:flex;flex-direction:column;gap:12px;width:40%;justify-self: start;">
+      <input type="text" placeholder="Your Name" style="padding:12px;border-radius:8px;border:1px solid #ccc;">
+      <input type="email" placeholder="Your Email" style="padding:12px;border-radius:8px;border:1px solid #ccc;">
+      <textarea rows="4" placeholder="Your Message" style="padding:12px;border-radius:8px;border:1px solid #ccc;"></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+    <!-- contact-map-iframe.html -->
+    <div class="map-wrapper">
+      <iframe
+        class="map-iframe"
+        src="https://www.google.com/maps?q=27.076742983700868, 31.30933340734184&z=15&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Our location">
+      </iframe>
+      <a class="open-map" href="https://www.google.com/maps?q=27.076742983700868, 31.30933340734184" target="_blank" rel="noopener">افتح الخريطة في Google Maps</a>
+    </div>
+    </div>
+  </section>
+</main>
+
+
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <h4>Yu Yu</h4>
+      <p class="muted">Experience the finest Japanese cuisine in a warm and inviting atmosphere.</p>
+    </div>
+    <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+  </div>
+  <div class="footer-bottom">
+      <p>© 2025 YU-YU. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

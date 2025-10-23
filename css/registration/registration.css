@@ -1,0 +1,259 @@
+/* ====================================
+   إعدادات القاعدة: HTML و BODY (التوسيط الكامل)
+   ==================================== */
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    
+    /* توسيط المحتوى بالكامل (أفقي وعمودي) */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+
+    background-image: url(../../images/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ====================================
+   تنسيقات الحاويات الرئيسية (Desktop / Tablet)
+   ==================================== */
+
+.main-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    
+    width: 90vw; 
+    max-width: 1000px; 
+    padding: 20px; /* هامش حول الحاوية الرئيسية */
+    box-sizing: border-box;
+}
+
+.maincontaner {
+    /* دمج وتحديد أبعاد الحاوية الأساسية */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    
+    width: 60vw;
+    max-width: 900px; 
+    height: auto; 
+    padding: 15px; 
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+    
+    /* الظل الأولي */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.5);
+    
+    /* الانتقال السلس للحركة */
+    transition: all 0.5s ease; 
+}
+
+/* تأثير Hover على الحاوية: إبرازها أكثر */
+.maincontaner:hover {
+    box-shadow: 
+        0 12px 30px rgba(0, 0, 0, 0.8), 
+        0 0 0 1px rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(12px);
+}
+
+/* ====================================
+   تنسيقات الصورة والنموذج
+   ==================================== */
+
+img {
+    width: 45%; 
+    height: auto;
+    max-height: 100%;
+    border-radius: 20px 0px 0px 20px;
+    
+    /* جعل الصورة تظهر بالكامل وبوضوح */
+    opacity: .7;
+    object-fit: cover; 
+    
+    transition: all 0.5s ease; 
+}
+
+/* تأثير على الصورة عند المرور فوق الحاوية: تكبير وإضاءة */
+.maincontaner:hover img {
+    transform: scale(1.05); 
+    filter: brightness(1.1); 
+}
+
+form {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+}
+
+/* ====================================
+   تنسيقات حقول الإدخال والأزرار (Hover & Focus)
+   ==================================== */
+
+form input {
+    width: 80%; 
+    font-size: 20px; 
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 30px;
+    border: 0;
+    
+    box-shadow: 5px 6px 10px black;
+    background-color: rgba(255, 255, 255, 0.594);
+    backdrop-filter: blur(10px);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* تأثير التركيز (Focus): نيومورفيك داخلي */
+form input:focus {
+    /* تغيير الظل ليبدو كأن الحقل انضغط للداخل */
+    box-shadow: 
+        inset 5px 5px 10px rgba(0, 0, 0, 0.6), 
+        inset -5px -5px 10px rgba(255, 255, 255, 0.1); 
+    background-color: rgba(0, 0, 0, 0.2); 
+    outline: none; /* إزالة الحد الافتراضي */
+}
+
+/* لون النص داخل الحقل عند التركيز */
+form input::placeholder {
+    color: white;
+    opacity: .6;
+    transition: 0.3s;
+}
+
+form input:focus::placeholder {
+    color: #f0f0f0; 
+    opacity: 0.8;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    font-size: 20px;
+    width: 45%; 
+    margin: 5px;
+    padding: 1vh 1vw;
+    cursor: pointer;
+    /* إزالة التنسيقات القديمة وتطبيق الأزرار هنا */
+    box-shadow: 5px 6px 10px black;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* تأثير Hover على الأزرار: حركة وبروز */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    transform: translateY(-2px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.7); /* تفتيح الخلفية */
+    color: #333; /* لون داكن للنص */
+}
+
+/* ====================================
+   تنسيقات الروابط
+   ==================================== */
+
+.link-area {
+    display: block;
+    padding-top: 20px; 
+    text-align: center; 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: red;
+    padding-bottom: 3px;
+    border-bottom: 2px solid red;
+    transition: 0.5s;
+}
+.error{
+    color: red;
+    font-size:medium;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:bolder;
+}
+/* ====================================
+   استجابة الشاشات الصغيرة (Media Queries)
+   ==================================== */
+
+@media (max-width: 768px) {
+    
+    .maincontaner {
+        /* تحويل الترتيب إلى عمودي (الصورة فوق النموذج) */
+        flex-direction: column;
+        width: 90vw; 
+        padding: 0; /* إزالة الـ padding في الحاوية الرئيسية */
+        margin: 20px;
+    }
+
+    img {
+        /* الصورة تأخذ عرض الحاوية بالكامل */
+        width: 100%; 
+        height: auto;
+        max-height: 250px;
+        /* تعديل الحواف لتكون في الجزء العلوي فقط */
+        border-radius: 20px 20px 0px 0px; 
+        
+    }
+
+    form {
+        width: 100%; /* النموذج يأخذ عرض الحاوية بالكامل */
+        padding: 20px 10px; 
+    }
+
+    form input {
+        font-size: 16px; 
+        padding: 10px; 
+        width: 85%; 
+    }
+    
+    input[type="submit"],
+    input[type="reset"] {
+        font-size: 16px;
+        padding: 8px 10px;
+        width: 40%;
+    }
+    
+    a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-actions {
+        flex-direction: column; /* الأزرار عمودية */
+        align-items: center;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        width: 60%;
+        margin: 5px 0;
+    }
+}

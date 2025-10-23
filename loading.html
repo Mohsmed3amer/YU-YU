@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../img/naroto_logo.png" type="image/x-icon">
+  <title>YU-YU Resaurant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Epilogue", sans-serif;
+    }
+
+    body {
+      background-size: cover;
+      background-image: url(./img/loading.gif);
+      color: #e9bb03;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      transition: background 0.4s, color 0.4s;
+    }
+
+    .loader {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: relative;
+      animation: rotate 1s linear infinite;
+    }
+
+    .loader::before,
+    .loader::after {
+      content: "";
+      box-sizing: border-box;
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 5px solid rgb(32, 32, 219);
+      animation: prixClipFix 2s linear infinite;
+    }
+
+    .loader::after {
+      border-color: #ea2a33;
+      animation: prixClipFix 2s linear infinite, rotate 0.5s linear infinite reverse;
+      inset: 6px;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes prixClipFix {
+      0%   { clip-path: polygon(50% 50%,0 0,0 0,0 0,0 0,0 0); }
+      25%  { clip-path: polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0); }
+      50%  { clip-path: polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%); }
+      75%  { clip-path: polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%); }
+      100% { clip-path: polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0); }
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-top: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    
+    <div class="loader"></div>
+    <h2>Loading YU-YU...</h2>
+    
+  </div>
+
+  <script>
+    setTimeout(() => {
+  const next = localStorage.getItem("nextPage") || "./index.html";
+  window.location.href = next;
+}, 3000);
+
+
+    const nextPage = localStorage.getItem("nextPage");
+    setTimeout(() => {
+      if (nextPage) {
+        window.location.href = nextPage;
+        localStorage.removeItem("nextPage");
+      }
+    }, 3000);
+  </script>
+</body>
+</html>

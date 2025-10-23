@@ -1,0 +1,47 @@
+body{
+    background-image: url(../../images/RamenBG.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: auto;
+    max-height:80vh;
+    overflow: hidden;
+    /* margin-top: 1%; */
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+.banner pre{
+    position:absolute;
+    color: white;
+    top:20%;
+    left: 10%;
+    display: block;
+    flex-wrap: wrap;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 10px 10px 10px black;
+}
+.banner .offer{
+    position:absolute;
+    top: 30%;
+    left: 80%;
+    width: 10%;
+    height: 30%;
+    border-radius:40% ;
+    transform: rotate(-20deg);
+}
+

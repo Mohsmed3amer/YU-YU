@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/naroto_logo.png" type="image/x-icon">
+  <title>YU-YU Resaurant</title>
+  <link rel="stylesheet" href="css/style.css" />
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+<div class="Welcome">
+  <nav class="navbar">
+    <div class="logo">
+      <img src="img/naroto_logo.png" alt="Logo">
+      <span>YU-YU</span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li class="fa-solid fa-house" style="color: #e9bb03;"><a href="#"> Home</a></li>
+      <li class="fa-solid fa-circle-info" style="color: #e9bb03;"><a href="#about"> About</a></li>
+      <li class="fa-solid fa-utensils" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./yu-yu/menu.html')"> Menu</a></li>
+      <li class="fa-solid fa-fire" style="color: #e9bb03;"><a href="#pobular"> Popular</a></li>
+      <li class="fa-solid fa-receipt" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./yu-yu/order.html')"> Order</a></li>
+      <li class="fa-solid fa-phone-alt" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./yu-yu/contact.html')"> Contact</a></li>
+      <li class="fa-solid fa-right-to-bracket" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./Pages/login.html')"> Login</a></li>
+    </ul>
+
+    <div class="controls">
+      <button id="themeToggle" class="theme-btn">🌙</button>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </div>
+  </nav>
+  
+    
+        <h1 class="Welcome-h">Welcome YU-YU Resaurant</h1>
+        <img src="img/home-sushi-rolls.png" alt="main photo" class="Welcome-img">
+        <p class="Welcome-p">Enjoy a good dinner with the best dishes in 
+                    the YU-YU restaurant and improve your day.</p>
+        <a href="#" class="button" onclick="goToLoading('./yu-yu/menu.html')">
+            Order Now <i class="ri-arrow-right-line"></i>
+        </a>
+</div>
+  <div class="about" id="about">
+
+    <div class="section__subtitle"><p>About Us</p></div>
+
+    <div class="container ">
+    <div class="photo">
+    <img src="img/about-sushi.png" alt="about image" class="img1">
+    <img src="img/Salamon.png" alt="about image" class="img2">
+    <img src="img/images.png" alt="about image" class="img3">
+    <img src="img/recently-salmon-sushi.png" alt="about image" class="img4"> 
+    </div> 
+    <div class="data">
+    <h2>
+    provide healthy food ....!
+    </h2>
+    <p>Welcome to YU-YU, where the art of Japanese cuisine meets modern elegance.
+      At YU-YU, we believe that dining is more than just eating — it’s an experience that awakens the senses.</p>
+    <p>Our chefs bring the true spirit of Japan to your table with dishes crafted from the finest and freshest ingredients. From delicate sushi and sashimi to warm bowls of ramen and crispy tempura, every bite tells a story of tradition, passion, and precision.</p>
+    <p>At YU-YU, hospitality is at the heart of everything we do — warm smiles, exquisite flavors, and attention to every detail.</p>
+    </div>
+    </div>
+  </div>
+   <!-- --------pobular--------- -->
+    <section id="pobular">
+    <h2 class="pobular_title">Pobuler Deshs</h2>
+    <div class="pobular">
+      
+        <div class="best-desh" id="bd1">
+          <img src="img/is.png" alt="">
+          <h3>Sushi Rolls</h3>
+          <div class="popular_price"><span >$10.99</span></div>
+          <a href="#" class="button2" onclick="goToLoading('./yu-yu/menu.html')">
+            Order Now <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+        <div class="best-desh" id="bd2">
+          <img src="img/or.png" alt="">
+          <h3>Onigiri</h3>
+          <div class="popular_price"><span >$12.99</span></div>
+          <a href="#" class="button2" onclick="goToLoading('./yu-yu/menu.html')">
+            Order Now <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+        <div class="best-desh" id="bd3">
+          <img src="img/ki.png" alt="">
+          <h3>Spring Rolls</h3>
+          <div class="popular_price"><span >$19.99</span></div>
+          <a href="#" class="button2" onclick="goToLoading('./yu-yu/menu.html')">
+            Order Now <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+        <div class="best-desh" id="bd3">
+          <img src="img/agedashi-tofu.JPG" alt="">
+          <h3>Agedashi-tofu</h3>
+          <div class="popular_price"><span >$15.99</span></div>
+          <a href="#" class="button2" onclick="goToLoading('./yu-yu/menu.html')">
+            Order Now <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+        <div class="best-desh" id="bd3">
+          <img src="img/gyoza.JPG" alt="">
+          <h3>Gyoza</h3>
+          <div class="popular_price"><span >$13.99</span></div>
+          <a href="#" class="button2" onclick="goToLoading('./yu-yu/menu.html')">
+            Order Now <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+        <div class="best-desh" id="bd3">
+          <img src="img/karaage.JPG" alt="">
+          <h3>Karaage</h3>
+          <div class="popular_price"><span >$16.99</span></div>
+          <a href="#" class="button2" onclick="goToLoading('./yu-yu/menu.html')">
+            Order Now <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+    </div>
+    </section>
+<!-- =============team member========= -->
+    <section class="team">
+    <h2>Team Member</h2>
+    
+    <div class="team-grid">
+      <div class="member">
+        <div class="photo" style="background-image: url(./img/Marco.jpg)"></div>
+        <h3>Marco</h3>
+        <p class="role" >Assistant</p>
+        <p class="role">Backend PHP</p>
+        
+      </div>
+
+      <div class="member">
+        <div class="photo" style="background-image: url(./img/Mohamed.jpg);"></div>
+        <h3>Mohamed Essam</h3>
+        <p class="role">Leader Team</p>
+        <p class="role">Backend .net</p>
+        
+      </div>
+
+      <div class="member">
+        <div class="photo" style="background-image: url(./img/yossef.jpg);"></div>
+        <h3>Youssef Essam</h3>
+        <p class="role">Assistant</p>
+        <p class="role">Web Develober</p>
+      </div>
+    </div>
+  </section>
+  <!-- ============footer=========== -->
+   <footer id="footer" class="footer hidden">
+    <div class="footer-container">
+      <div><img src="img/pr2(1).png" alt="" class="imagepr"></div>
+      <div class="footer-about">
+        <h3>YU-YU</h3>
+        <p>Experience authentic Japanese cuisine in a serene and welcoming atmosphere. Taste the tradition, feel the culture.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Our Menu</h4>
+        <ul>
+          <li><a href="#">Sushi & Sashimi</a></li>
+          <li><a href="#">Noodle, Soups, and Donburi</a></li>
+          <li><a href="#">Temaki & Fried Dishes</a></li>
+          <li><a href="#">Salads & Light Sides</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+            <li class="fa-solid fa-circle-info" style="color: #e9bb03;"><a href="#about"> About</a></li>
+      <li class="fa-solid fa-utensils" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./yu-yu/menu.html')"> Menu</a></li>
+      <li class="fa-solid fa-fire" style="color: #e9bb03;"><a href="#pobular"> Popular</a></li>
+      <li class="fa-solid fa-receipt" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./yu-yu/order.html')"> Order</a></li>
+      <li class="fa-solid fa-phone-alt" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./yu-yu/contact.html')"> Contact</a></li>
+      <li class="fa-solid fa-right-to-bracket" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./Pages/login.html')"> Login</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section contact">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 23 Japan Town St, San Francisco, CA 94115</p>
+        <p><i class="fas fa-phone-alt"></i> (415) 123-4567</p>
+      </div>
+    
+    <div><img src="img/pr_animy(1).png" alt="" class="imagepr2"></div>
+    </div>
+    <hr />
+    <div class="footer-bottom">
+      <p>© 2025 YU-YU. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>

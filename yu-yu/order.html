@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="../img/naroto_logo.png" type="image/x-icon">
+  <title>YU-YU Resaurant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">
+      <img src="../img/naroto_logo.png" alt="Logo">
+      <span>YU-YU</span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li class="fa-solid fa-house" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./index.html')"> Home</a></li>
+      <li class="fa-solid fa-circle-info" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./index.html#about')"> About</a></li>
+      <li class="fa-solid fa-utensils" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./yu-yu/menu.html')"> Menu</a></li>
+      <li class="fa-solid fa-fire" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./index.html#pobular')"> Popular</a></li>
+      <li class="fa-solid fa-receipt" style="color: #e9bb03;"><a href="#" > Order</a></li>
+      <li class="fa-solid fa-phone-alt" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./yu-yu/contact.html')"> Contact</a></li>
+      <li class="fa-solid fa-right-to-bracket" style="color: #e9bb03;"><a href="#" onclick="goToLoading('./Pages/login.html')"> Login</a></li>
+    </ul>
+
+    <div class="controls">
+      <button id="themeToggle" class="theme-btn">🌙</button>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </div>
+  </nav>
+
+<main class="container">
+  <section class="hero">
+    <h1>Your Order</h1>
+    <p class="lead">Review your selections, adjust quantities, or remove items before checkout.</p>
+  </section>
+
+  <section class="section order-page">
+    <div class="order-left">
+      <h2 class="section-title"><span class="accent-bar"></span>Items in Your Cart</h2>
+      
+      <ul id="orderList" class="order-list">
+        </ul>
+
+      <div class="order-actions-bottom" style="margin-top:20px; display:flex; gap:10px;">
+        <button id="undoDelete" class="btn btn-ghost">Undo Last Delete</button>
+        <button id="clearAll" class="btn btn-primary">Clear All</button>
+      </div>
+    </div>
+
+    <aside class="order-right">
+      <div class="summary-card">
+        <h3>Order Summary</h3>
+        
+        <dl id="summaryItems" class="summary-details">
+          </dl>
+
+        <div class="summary-row total">
+          <span>Total</span>
+          <span id="totalPrice">$0.00</span>
+        </div>
+
+        <button class="btn btn-primary block checkout-btn">Checkout</button>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div><h4>Yu Yu</h4><p class="muted">Experience the finest Japanese cuisine in a warm and inviting atmosphere.</p></div>
+    <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+  </div>
+  <div class="footer-bottom">
+      <p>© 2025 YU-YU. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="main.js"></script> 
+</body>
+</html>
